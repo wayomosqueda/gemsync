@@ -1,12 +1,11 @@
 openapi: 3.1.0
 info:
-  title: LectorGoogleDoc
-  description: Obtiene el texto de un Google Doc en tiempo real.
-  version: v1.0.0
+  title: HerramientaLectorDoc
+  version: 1.0.0
 servers:
   - url: https://script.google.com/macros/s/AKfycbyZq2JM4NohCcy2rf3GQObf-irmU-Aj_OBh5ohhSYDzKRbzAEStprVhd1w-oNbbVICxFw/exec
 paths:
   /exec:
     get:
-      operationId: obtenerContenidoDelDocumento
-      summary: Leer el contenido del Google Doc conectado.
+      operationId: leerDocumento
+      summary: Lee un documento de Google.
